@@ -1,0 +1,66 @@
+.comment{
+  position: relative;
+  padding: 25px 15px 20px 15px;
+  background: #FEEE7E;
+  margin-bottom: 50px;
+  color: black;
+  width: 350px;
+  box-shadow: 0px 3px 5px 0px rgba(65, 65, 65, 0.7);
+}
+
+.initials{
+  position: absolute;
+  border-radius: 50%;
+  background: #a57703;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  top: -30px;
+  left: -30px;
+}
+.name{
+  z-index: 1;
+  position: absolute;
+  background: #a57703;
+  color: black;
+  text-align: left;
+  padding: 6px 12px;
+  top: -18px;
+  left: 20px;
+  width: 130px;
+}
+
+.delete{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  top: -10px;
+  background: #a57703;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  line-height: 1;
+  cursor: pointer;
+}
+.delete::before, .delete::after{
+  position: absolute;
+  content: '';
+  background: black;
+  width: 10px;
+  height: 1px;
+}
+.delete::before{
+  transform: rotate(45deg);
+}
+.delete::after{
+  transform: rotate(-45deg);
+}
